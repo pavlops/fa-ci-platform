@@ -33,7 +33,7 @@ module "eks" {
     module.security_group_eks_worker_from_alb.this_security_group_id
   ]
   workers_additional_policies = [
-    "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+    "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser"
   ]
 
   // Kubeconfig parameters
