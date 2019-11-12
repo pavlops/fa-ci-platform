@@ -39,12 +39,13 @@ When working in a PR branch:
 1. Application tests
 2. Quality code analysis
 3. CI Build and push snapshot
+
 When the PR is merged to master:
-4. Integration tests
-5. Quality code analysis in master
-6. Build Release
-7. Promote to Staging
-8. Promote to Production (manual step)
+1. Integration tests
+2. Quality code analysis in master
+3. Build Release
+4. Promote to Staging
+5. Promote to Production (manual step)
 
 ## Further improvements
 - Get a SSL certificate to configure the HTTPS communication.
