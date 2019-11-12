@@ -7,7 +7,9 @@ The CI platform for FA consist in a Jenkins X installation in an AWS EKS cluster
 - The pipelines are defined in Jenkinsfiles.
 - The infrastructure for the platform and the apps is defined in Terraform.
 - For testing purposes we will use a personal domain: somosaltum.com.
+- Code coverage tests with Sonarqube.
 - Notifications in Github by Jenkins (GitOps).
+- Monitoring with Prometheus and Grafana.
 
 ## Project contents
 - terraform/: contains the infrastructure as code in Terraform for the FA apps and FA ci-platform.
@@ -39,12 +41,12 @@ When working in a PR branch:
 3. CI Build and push snapshot
 When the PR is merged to master:
 4. Integration tests
-5. Build Release
-6. Promote to Staging
-7. Promote to Production (manual step)
+5. Quality code analysis in master
+6. Build Release
+7. Promote to Staging
+8. Promote to Production (manual step)
 
 ## Further improvements
 - Get a SSL certificate to configure the HTTPS communication.
 - Different EKS clusters for different environments.
 - Notifications to Github and Slack if stages fail.
-- Installation of a Sonarqube server.
