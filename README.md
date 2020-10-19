@@ -1,6 +1,7 @@
 # fa-ci-platform
 
 The CI platform for FA consist in a Jenkins X installation in an AWS EKS cluster that defines CI/CD pipelines for different apps within the FA company.
+Note: This project is part of a Jenkins X, Terraform and EKS sample assessment.
 
 ## Platform features
 - The platform is mounted in a Kubernetes environment with EBS persistent volumes for its high availability and scalability.
